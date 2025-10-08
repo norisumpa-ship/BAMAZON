@@ -124,8 +124,7 @@
         //process the queue
         checkAll: function() {
             var length = $.fn.appear.checks.length;
-            if (length > 0)
-                while (length--)($.fn.appear.checks[length])();
+            if (length > 0) while (length--) ($.fn.appear.checks[length])();
         },
 
         //check the queue asynchronously
@@ -138,8 +137,7 @@
     //run checks when these methods are called
     $.each(['append', 'prepend', 'after', 'before', 'attr',
         'removeAttr', 'addClass', 'removeClass', 'toggleClass',
-        'remove', 'css', 'show', 'hide'
-    ], function(i, n) {
+        'remove', 'css', 'show', 'hide'], function(i, n) {
         var old = $.fn[n];
         if (old) {
             $.fn[n] = function() {
