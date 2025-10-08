@@ -1,4 +1,5 @@
-@charset "UTF-8";body.fancybox-active {
+@charset "UTF-8";
+body.fancybox-active {
     overflow: hidden
 }
 
@@ -27,10 +28,13 @@ body.fancybox-iosfix {
     backface-visibility: hidden;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif
 }
 
-.fancybox-bg,.fancybox-inner,.fancybox-outer,.fancybox-stage {
+.fancybox-bg,
+.fancybox-inner,
+.fancybox-outer,
+.fancybox-stage {
     position: absolute;
     top: 0;
     right: 0;
@@ -48,28 +52,32 @@ body.fancybox-iosfix {
     opacity: 0;
     transition-duration: inherit;
     transition-property: opacity;
-    transition-timing-function: cubic-bezier(.47,0,.74,.71)
+    transition-timing-function: cubic-bezier(.47, 0, .74, .71)
 }
 
 .fancybox-is-open .fancybox-bg {
     opacity: .87;
-    transition-timing-function: cubic-bezier(.22,.61,.36,1)
+    transition-timing-function: cubic-bezier(.22, .61, .36, 1)
 }
 
-.fancybox-caption-wrap,.fancybox-infobar,.fancybox-toolbar {
+.fancybox-caption-wrap,
+.fancybox-infobar,
+.fancybox-toolbar {
     position: absolute;
     direction: ltr;
     z-index: 99997;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .25s,visibility 0s linear .25s;
+    transition: opacity .25s, visibility 0s linear .25s;
     box-sizing: border-box
 }
 
-.fancybox-show-caption .fancybox-caption-wrap,.fancybox-show-infobar .fancybox-infobar,.fancybox-show-toolbar .fancybox-toolbar {
+.fancybox-show-caption .fancybox-caption-wrap,
+.fancybox-show-infobar .fancybox-infobar,
+.fancybox-show-toolbar .fancybox-toolbar {
     opacity: 1;
     visibility: visible;
-    transition: opacity .25s,visibility 0s
+    transition: opacity .25s, visibility 0s
 }
 
 .fancybox-infobar {
@@ -129,9 +137,9 @@ body.fancybox-iosfix {
     display: none;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition-property: opacity,-webkit-transform;
-    transition-property: transform,opacity;
-    transition-property: transform,opacity,-webkit-transform
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform
 }
 
 .fancybox-slide:before {
@@ -142,7 +150,10 @@ body.fancybox-iosfix {
     width: 0
 }
 
-.fancybox-is-sliding .fancybox-slide,.fancybox-slide--current,.fancybox-slide--next,.fancybox-slide--previous {
+.fancybox-is-sliding .fancybox-slide,
+.fancybox-slide--current,
+.fancybox-slide--next,
+.fancybox-slide--previous {
     display: block
 }
 
@@ -154,11 +165,13 @@ body.fancybox-iosfix {
     display: none
 }
 
-.fancybox-slide--video .fancybox-content,.fancybox-slide--video iframe {
+.fancybox-slide--video .fancybox-content,
+.fancybox-slide--video iframe {
     background: #000
 }
 
-.fancybox-slide--map .fancybox-content,.fancybox-slide--map iframe {
+.fancybox-slide--map .fancybox-content,
+.fancybox-slide--map iframe {
     background: #e5e3df
 }
 
@@ -179,7 +192,12 @@ body.fancybox-iosfix {
     box-sizing: border-box
 }
 
-.fancybox-slide>base,.fancybox-slide>link,.fancybox-slide>meta,.fancybox-slide>script,.fancybox-slide>style,.fancybox-slide>title {
+.fancybox-slide>base,
+.fancybox-slide>link,
+.fancybox-slide>meta,
+.fancybox-slide>script,
+.fancybox-slide>style,
+.fancybox-slide>title {
     display: none
 }
 
@@ -204,9 +222,9 @@ body.fancybox-iosfix {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    transition-property: opacity,-webkit-transform;
-    transition-property: transform,opacity;
-    transition-property: transform,opacity,-webkit-transform
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform
 }
 
 .fancybox-can-zoomOut .fancybox-image-wrap {
@@ -227,7 +245,8 @@ body.fancybox-iosfix {
     cursor: grabbing
 }
 
-.fancybox-image,.fancybox-spaceball {
+.fancybox-image,
+.fancybox-spaceball {
     position: absolute;
     top: 0;
     left: 0;
@@ -265,7 +284,8 @@ body.fancybox-iosfix {
     height: 100%
 }
 
-.fancybox-error,.fancybox-iframe {
+.fancybox-error,
+.fancybox-iframe {
     margin: 0;
     width: 100%;
     background: #fff
@@ -295,17 +315,20 @@ body.fancybox-iosfix {
     padding: 10px;
     border: 0;
     border-radius: 0;
-    background: rgba(30,30,30,.6);
+    background: rgba(30, 30, 30, .6);
     transition: color .3s ease;
     cursor: pointer;
     outline: none
 }
 
-.fancybox-button,.fancybox-button:link,.fancybox-button:visited {
+.fancybox-button,
+.fancybox-button:link,
+.fancybox-button:visited {
     color: #ccc
 }
 
-.fancybox-button:focus,.fancybox-button:hover {
+.fancybox-button:focus,
+.fancybox-button:hover {
     color: #fff
 }
 
@@ -333,7 +356,8 @@ body.fancybox-iosfix {
     stroke-width: 1
 }
 
-.fancybox-button--pause svg path:nth-child(1),.fancybox-button--play svg path:nth-child(2) {
+.fancybox-button--pause svg path:nth-child(1),
+.fancybox-button--play svg path:nth-child(2) {
     display: none
 }
 
@@ -367,7 +391,7 @@ body.fancybox-iosfix {
     right: 10px;
     width: 40px;
     height: 40px;
-    background: rgba(30,30,30,.6)
+    background: rgba(30, 30, 30, .6)
 }
 
 .fancybox-navigation .fancybox-button--arrow_left {
@@ -400,7 +424,7 @@ body.fancybox-iosfix {
     right: 5px;
     width: 30px;
     height: 30px;
-    font: 22px/30px Arial,Helvetica Neue,Helvetica,sans-serif;
+    font: 22px/30px Arial, Helvetica Neue, Helvetica, sans-serif;
     color: #888;
     font-weight: 300;
     text-align: center;
@@ -425,22 +449,26 @@ body.fancybox-iosfix {
     background: #eee
 }
 
-.fancybox-slide--iframe .fancybox-close-small,.fancybox-slide--image .fancybox-close-small {
+.fancybox-slide--iframe .fancybox-close-small,
+.fancybox-slide--image .fancybox-close-small {
     top: 0;
     right: -40px
 }
 
-.fancybox-slide--iframe .fancybox-close-small:after,.fancybox-slide--image .fancybox-close-small:after {
+.fancybox-slide--iframe .fancybox-close-small:after,
+.fancybox-slide--image .fancybox-close-small:after {
     font-size: 35px;
     color: #aaa
 }
 
-.fancybox-slide--iframe .fancybox-close-small:hover:after,.fancybox-slide--image .fancybox-close-small:hover:after {
+.fancybox-slide--iframe .fancybox-close-small:hover:after,
+.fancybox-slide--image .fancybox-close-small:hover:after {
     color: #fff;
     background: transparent
 }
 
-.fancybox-is-scaling .fancybox-close-small,.fancybox-is-zoomable.fancybox-can-drag .fancybox-close-small {
+.fancybox-is-scaling .fancybox-close-small,
+.fancybox-is-zoomable.fancybox-can-drag .fancybox-close-small {
     display: none
 }
 
@@ -449,20 +477,22 @@ body.fancybox-iosfix {
     left: 0;
     right: 0;
     padding: 60px 2vw 0;
-    background: linear-gradient(180deg,transparent 0,rgba(0,0,0,.1) 20%,rgba(0,0,0,.2) 40%,rgba(0,0,0,.6) 80%,rgba(0,0,0,.8));
+    background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .1) 20%, rgba(0, 0, 0, .2) 40%, rgba(0, 0, 0, .6) 80%, rgba(0, 0, 0, .8));
     pointer-events: none
 }
 
 .fancybox-caption {
     padding: 30px 0;
-    border-top: 1px solid hsla(0,0%,100%,.4);
+    border-top: 1px solid hsla(0, 0%, 100%, .4);
     font-size: 14px;
     color: #fff;
     line-height: 20px;
     -webkit-text-size-adjust: none
 }
 
-.fancybox-caption a,.fancybox-caption button,.fancybox-caption select {
+.fancybox-caption a,
+.fancybox-caption button,
+.fancybox-caption select {
     pointer-events: all;
     position: relative
 }
@@ -473,8 +503,8 @@ body.fancybox-iosfix {
 }
 
 .fancybox-slide>.fancybox-loading {
-    border: 6px solid hsla(0,0%,39%,.4);
-    border-top: 6px solid hsla(0,0%,100%,.6);
+    border: 6px solid hsla(0, 0%, 39%, .4);
+    border-top: 6px solid hsla(0, 0%, 100%, .6);
     border-radius: 100%;
     height: 50px;
     width: 50px;
@@ -494,7 +524,6 @@ body.fancybox-iosfix {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -506,7 +535,6 @@ body.fancybox-iosfix {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
-
     to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
@@ -514,18 +542,18 @@ body.fancybox-iosfix {
 }
 
 .fancybox-animated {
-    transition-timing-function: cubic-bezier(0,0,.25,1)
+    transition-timing-function: cubic-bezier(0, 0, .25, 1)
 }
 
 .fancybox-fx-slide.fancybox-slide--previous {
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     opacity: 0
 }
 
 .fancybox-fx-slide.fancybox-slide--next {
-    -webkit-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
     opacity: 0
 }
 
@@ -535,9 +563,10 @@ body.fancybox-iosfix {
     opacity: 1
 }
 
-.fancybox-fx-fade.fancybox-slide--next,.fancybox-fx-fade.fancybox-slide--previous {
+.fancybox-fx-fade.fancybox-slide--next,
+.fancybox-fx-fade.fancybox-slide--previous {
     opacity: 0;
-    transition-timing-function: cubic-bezier(.19,1,.22,1)
+    transition-timing-function: cubic-bezier(.19, 1, .22, 1)
 }
 
 .fancybox-fx-fade.fancybox-slide--current {
@@ -545,14 +574,14 @@ body.fancybox-iosfix {
 }
 
 .fancybox-fx-zoom-in-out.fancybox-slide--previous {
-    -webkit-transform: scale3d(1.5,1.5,1.5);
-    transform: scale3d(1.5,1.5,1.5);
+    -webkit-transform: scale3d(1.5, 1.5, 1.5);
+    transform: scale3d(1.5, 1.5, 1.5);
     opacity: 0
 }
 
 .fancybox-fx-zoom-in-out.fancybox-slide--next {
-    -webkit-transform: scale3d(.5,.5,.5);
-    transform: scale3d(.5,.5,.5);
+    -webkit-transform: scale3d(.5, .5, .5);
+    transform: scale3d(.5, .5, .5);
     opacity: 0
 }
 
@@ -581,14 +610,14 @@ body.fancybox-iosfix {
 }
 
 .fancybox-fx-circular.fancybox-slide--previous {
-    -webkit-transform: scale3d(0,0,0) translate3d(-100%,0,0);
-    transform: scale3d(0,0,0) translate3d(-100%,0,0);
+    -webkit-transform: scale3d(0, 0, 0) translate3d(-100%, 0, 0);
+    transform: scale3d(0, 0, 0) translate3d(-100%, 0, 0);
     opacity: 0
 }
 
 .fancybox-fx-circular.fancybox-slide--next {
-    -webkit-transform: scale3d(0,0,0) translate3d(100%,0,0);
-    transform: scale3d(0,0,0) translate3d(100%,0,0);
+    -webkit-transform: scale3d(0, 0, 0) translate3d(100%, 0, 0);
+    transform: scale3d(0, 0, 0) translate3d(100%, 0, 0);
     opacity: 0
 }
 
@@ -599,13 +628,13 @@ body.fancybox-iosfix {
 }
 
 .fancybox-fx-tube.fancybox-slide--previous {
-    -webkit-transform: translate3d(-100%,0,0) scale(.1) skew(-10deg);
-    transform: translate3d(-100%,0,0) scale(.1) skew(-10deg)
+    -webkit-transform: translate3d(-100%, 0, 0) scale(.1) skew(-10deg);
+    transform: translate3d(-100%, 0, 0) scale(.1) skew(-10deg)
 }
 
 .fancybox-fx-tube.fancybox-slide--next {
-    -webkit-transform: translate3d(100%,0,0) scale(.1) skew(10deg);
-    transform: translate3d(100%,0,0) scale(.1) skew(10deg)
+    -webkit-transform: translate3d(100%, 0, 0) scale(.1) skew(10deg);
+    transform: translate3d(100%, 0, 0) scale(.1) skew(10deg)
 }
 
 .fancybox-fx-tube.fancybox-slide--current {
@@ -767,7 +796,7 @@ p.fancybox-share__links {
 .fancybox-thumbs-y>ul::-webkit-scrollbar-track {
     background: #fff;
     border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3)
 }
 
 .fancybox-thumbs-y>ul::-webkit-scrollbar-thumb {
@@ -794,7 +823,7 @@ p.fancybox-share__links {
 }
 
 li.fancybox-thumbs-loading {
-    background: rgba(0,0,0,.1)
+    background: rgba(0, 0, 0, .1)
 }
 
 .fancybox-thumbs>ul>li>img {
@@ -820,22 +849,20 @@ li.fancybox-thumbs-loading {
     border: 4px solid #4ea7f9;
     z-index: 99991;
     opacity: 0;
-    transition: all .2s cubic-bezier(.25,.46,.45,.94)
+    transition: all .2s cubic-bezier(.25, .46, .45, .94)
 }
 
 .fancybox-thumbs>ul>li.fancybox-thumbs-active:before {
     opacity: 1
 }
 
-@media (max-width: 800px) {
+@media (max-width:800px) {
     .fancybox-thumbs {
-        width:110px
+        width: 110px
     }
-
     .fancybox-show-thumbs .fancybox-inner {
         right: 110px
     }
-
     .fancybox-thumbs>ul>li {
         max-width: calc(100% - 10px)
     }
